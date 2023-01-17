@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "JV7EXRUDAsfTomZZRBT1I6aD+4mnfseuCUW7g6jKtZfxsBDOs1eiXHhY6BWGLVoDAdGTm4u2LA2+hDImDgF5LQ==",
+  "success": true,
+  "projectFilePath": "D:\\Projects\\gRPCProject\\grpc-solution\\client\\client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\anils\\.nuget\\packages\\google.protobuf\\3.21.11\\google.protobuf.3.21.11.nupkg.sha512",
+    "C:\\Users\\anils\\.nuget\\packages\\grpc.core\\2.46.5\\grpc.core.2.46.5.nupkg.sha512",
+    "C:\\Users\\anils\\.nuget\\packages\\grpc.core.api\\2.46.5\\grpc.core.api.2.46.5.nupkg.sha512",
+    "C:\\Users\\anils\\.nuget\\packages\\grpc.tools\\2.51.0\\grpc.tools.2.51.0.nupkg.sha512",
+    "C:\\Users\\anils\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
+  ],
+  "logs": []
+}

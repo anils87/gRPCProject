@@ -1,0 +1,62 @@
+syntax = "proto3";
+
+package calculator;
+
+message IntInputValue{
+	int32 a = 1;
+	int32 b = 2;
+}
+
+message AdditionRequest {
+	IntInputValue intInputValue = 1;
+}
+
+message AdditionResponse{
+	int32 result =1;
+}
+
+message PrimeNumInput{
+	int32 prime_number=1;
+}
+message PrimeNumberDecoRequest{
+	PrimeNumInput primeNumInput = 1;
+}
+
+message PrimeNumberDecoResponse{
+	int32 result = 1;
+}
+
+message ComputeAvgInput{
+	int32 num_to_average=1;
+}
+message ComputeAvgRequest{
+	ComputeAvgInput computeAvgInput = 1;
+}
+message ComputeAvgResponse{
+	double cal_avg=1;
+}
+
+message FindMaxInput{
+	int32 num_to_max=1;
+}
+message FindMaxRequest {
+	FindMaxInput findMaxInput = 1;
+}
+
+message FindMaxResponse{
+	int32 max_number=1;
+}
+
+service CalculateService{
+	// Unary Call
+	rpc Addition(AdditionRequest) returns (AdditionResponse){}
+
+	// Server Streaming
+	rpc PrimeNumberDecomposition(PrimeNumberDecoRequest) returns (stream PrimeNumberDecoResponse){}
+
+	// Client Streaming
+	rpc CalculateAverage(stream ComputeAvgRequest) returns (ComputeAvgResponse){}
+
+	// Bi-directional Streaming
+	rpc FindMaximumNumber(stream FindMaxRequest) returns (stream FindMaxResponse){}
+}
